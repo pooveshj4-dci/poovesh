@@ -1,4 +1,4 @@
-﻿:root {
+:root {
   --bg: #07111f;
   --bg-soft: #0d1b2a;
   --panel: rgba(15, 23, 42, 0.9);
@@ -445,10 +445,12 @@ textarea {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1.2rem;
+  min-width: 0;
 }
 
 .skill-card,
 .learning-card {
+  min-width: 0;
   background: rgba(148, 163, 184, 0.04);
   border: 1px solid var(--line);
   border-radius: 20px;
@@ -772,7 +774,8 @@ textarea {
   }
 
   .skills-grid,
-  .projects-grid {
+  .projects-grid,
+  .learning-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -807,7 +810,8 @@ textarea {
 
   .skills-grid,
   .projects-grid,
-  .stats-grid {
+  .stats-grid,
+  .learning-grid {
     grid-template-columns: 1fr;
   }
 
